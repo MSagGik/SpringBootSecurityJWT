@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+Hello world!
+
+<!--кнопка выхода из сессии-->
+<form th:action="@{/logout}" method="POST">
+    <input type="submit" value="Logout" />
+</form>
+<!--было:-->
+<!--<a href="/logout">Logout</a>-->
+
+</body>
+</html>
